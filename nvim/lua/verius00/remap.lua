@@ -28,7 +28,7 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- enable tmux navigation in normal mode
-vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
-vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
-vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>")
-vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>")
+vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", {noremap = true})
+vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", {noremap = true})
+vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", {noremap = true})
+vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", {noremap = true})

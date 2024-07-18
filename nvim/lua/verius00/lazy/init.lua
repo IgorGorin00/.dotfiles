@@ -12,6 +12,7 @@ return {
             }
         end
     },
+
     
     "folke/zen-mode.nvim",
     "Eandrju/cellular-automaton.nvim",
