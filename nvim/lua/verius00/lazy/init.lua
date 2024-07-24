@@ -3,7 +3,7 @@ return {
         "nvim-lua/plenary.nvim",
         name = "plenary"
     },
-    
+
     {
         "folke/trouble.nvim",
         config = function()
@@ -13,7 +13,6 @@ return {
         end
     },
 
-    
     "folke/zen-mode.nvim",
     "Eandrju/cellular-automaton.nvim",
 }

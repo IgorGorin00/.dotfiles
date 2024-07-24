@@ -5,7 +5,7 @@ return {
         vim.g.jukit_mappings_ext = '.ipynb'
         -- Set the markers for the cells
         vim.g.jukit_split = 1
-        vim.g.jukit_cell_marker = '# %%'
+        vim.g.jukit_cell_marker = '#|%%--%%|'
 
         vim.g.python3_host_prog = '/usr/bin/python3'
         vim.g.jukit_shell_cmd = 'ipython3'

@@ -9,6 +9,7 @@ local my_group = augroup("my_group", {})
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup("HighlightYank", {})
 
+vim.env.NODE_PATH = '/home/linuxbrew/.linuxbrew/lib/node_modules'
 
 autocmd("Lspattach", {
     group = my_group,
@@ -24,7 +25,8 @@ autocmd("Lspattach", {
         vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
         vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
         vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-        vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+        vim.keymap.set("i", "<C-k>", function() vim.lsp.buf.signature_help() end, opts)
 
     end
 })
+
