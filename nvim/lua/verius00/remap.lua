@@ -18,10 +18,10 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lprev<CR>zz")
+-- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+-- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+-- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+-- vim.keymap.set("n", "<leader>k", "<cmd>lprev<CR>zz")
 
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
@@ -32,3 +32,13 @@ vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", {noremap = true})
 vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", {noremap = true})
 vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", {noremap = true})
 vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", {noremap = true})
+
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer.sh<CR>")
+
+-- manage width and height of nvim splits
+-- In init.lua
+vim.api.nvim_set_keymap('n', '<C-[>', ':vertical resize -2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-]>', ':vertical resize +2<CR>', { noremap = true, silent = true })
+-- In init.lua
+vim.api.nvim_set_keymap('n', '<C-;>', ':horizontal resize -2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-\'>', ':horizontal resize +2<CR>', { noremap = true, silent = true })

@@ -1,3 +1,16 @@
+function activate_r()
+    vim.g.jukit_shell_cmd = 'R'
+    print('Switched to R')
+end
+
+-- Function to set the shell command to IPython3
+function activate_py()
+    vim.g.jukit_shell_cmd = 'ipython3'
+    print('Switched to IPython3')
+end
+
+
+
 return {
     "luk400/vim-jukit",
     confing = function()
@@ -20,6 +33,8 @@ return {
         vim.g.jukit_convert_open_default = -1
         vim.g.jukit_file_encodings = 'utf-8'
         vim.g.jukit_venv_in_output_hist = 1
+        -- Define functions to switch between Python and R
     end
 }
+
 
