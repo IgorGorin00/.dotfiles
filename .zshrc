@@ -12,7 +12,7 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 
 export WIN_HOME_DIR='/mnt/c/Users/igor/'
-export PATH="/home/igor/.local/scripts:/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="/home/igor/.local/bin:/home/igor/.local/scripts:/home/linuxbrew/.linuxbrew/bin:$PATH"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

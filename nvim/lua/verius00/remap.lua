@@ -14,7 +14,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-
+vim.keymap.set("n", "<leader>i", [[:s/$/ # pyright: ignore/<CR>:noh<CR>]])
 
 vim.keymap.set("n", "Q", "<nop>")
 
@@ -35,6 +35,9 @@ vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", {noremap = true})
 
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer.sh<CR>")
 
+
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+--[[
 -- manage width and height of nvim splits
 -- In init.lua
 vim.api.nvim_set_keymap('n', '<C-[>', ':vertical resize -2<CR>', { noremap = true, silent = true })
@@ -42,3 +45,4 @@ vim.api.nvim_set_keymap('n', '<C-]>', ':vertical resize +2<CR>', { noremap = tru
 -- In init.lua
 vim.api.nvim_set_keymap('n', '<C-;>', ':horizontal resize -2<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-\'>', ':horizontal resize +2<CR>', { noremap = true, silent = true })
+]]--

@@ -12,6 +12,7 @@ return {
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
         "j-hui/fidget.nvim",
+        "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
     },
     config = function()
         local cmp = require("cmp")
@@ -25,6 +26,9 @@ return {
         )
         require("fidget").setup({})
         require("mason").setup()
+        require("lsp_lines").setup()
+        vim.diagnostic.config({ virtual_lines = false })
+        vim.keymap.set("", "<Leader>l", require("lsp_lines").toggle, { desc = "Toggle lsp_lines" })
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",
