@@ -51,6 +51,9 @@ exec zsh
 # Add zsh-autosuggestions to the plugins list in.zshrc
 
 ##################################################
+# python stuff
+sudo apt-get install python3-cffi python3-dev python3-pypandoc python3-setuptools
+##################################################
 #  for neovim
 sudo add-apt-repository ppa:neovim-ppa/unstable
 
