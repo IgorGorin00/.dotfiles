@@ -79,6 +79,11 @@ sudo apt-get install -y nodejs
 sudo apt-get update
 sudo apt-get install python3-pip
 
+##################################################
+# python stuff
+sudo apt-get install python3-cffi python3-dev python3-pypandoc python3-setuptools
+##################################################
+
 # for jukit
 sudo apt install python3-pynvim
 ################################################################################

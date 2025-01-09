@@ -1,15 +1,28 @@
-function activate_r()
+function Activate_r()
     vim.g.jukit_shell_cmd = 'R'
     print('Switched to R')
 end
 
 -- Function to set the shell command to IPython3
-function activate_py()
+function Activate_py()
     vim.g.jukit_shell_cmd = 'ipython3'
     print('Switched to IPython3')
 end
 
+function Activate_horizontal()
+    vim.api.nvim_set_keymap('n', '<C-[>', ':vertical resize -2<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<C-]>', ':vertical resize +2<CR>', { noremap = true, silent = true })
+    command = [[ let g:jukit_layout = { 'split': 'horizontal', 'p1': 0.6, 'val': [ 'file_content', { 'split': 'vertical', 'p1': 0.6, 'val': ['output', 'output_history'] } ] }]]
+    vim.cmd(command)
+end
 
+function Activate_vertical()
+    vim.api.nvim_set_keymap('n', '<C-[>', ':horizontal resize -2<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<C-]>', ':horizontal resize +2<CR>', { noremap = true, silent = true })
+    command = [[ let g:jukit_layout = { 'split': 'vertical', 'p1': 0.7, 'val': [ 'file_content', { 'split': 'horizontal', 'p1': 0.6, 'val': ['output', 'output_history'] } ] }]]
+    print("vertical split activated")
+    vim.cmd(command)
+end
 
 return {
     "luk400/vim-jukit",
