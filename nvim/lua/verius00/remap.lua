@@ -42,3 +42,6 @@ vim.api.nvim_set_keymap('n', '<C-]>', ':vertical resize +2<CR>', { noremap = tru
 -- In init.lua
 vim.api.nvim_set_keymap('n', '<C-;>', ':horizontal resize -2<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-\'>', ':horizontal resize +2<CR>', { noremap = true, silent = true })
+
+vim.keymap.set('n', '<leader>h<CR>', ':call jukit#send#line()<cr>', { noremap = true, silent = true })
+
