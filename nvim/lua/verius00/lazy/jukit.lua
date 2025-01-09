@@ -35,7 +35,7 @@ return {
 
         vim.g.python3_host_prog = '/usr/bin/python3'
         vim.g.jukit_shell_cmd = 'ipython3'
-        vim.g.jukit_terminal = ''
+        vim.g.jukit_terminal = 'tmux'
         vim.g.jukit_auto_output_hist = 0
         vim.g.jukit_use_tcomment = 0
         vim.g.jukit_comment_mark = '#'
@@ -46,8 +46,6 @@ return {
         vim.g.jukit_convert_open_default = -1
         vim.g.jukit_file_encodings = 'utf-8'
         vim.g.jukit_venv_in_output_hist = 1
-        Activate_vertical()
-        -- Define functions to switch between Python and R
     end
 }
 
