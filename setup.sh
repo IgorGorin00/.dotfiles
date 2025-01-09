@@ -117,3 +117,5 @@ sed 's/igor/irgori/g' ./.zshrc > ./.zshrc
 # poetry
 curl -sSL https://install.python-poetry.org | python3 -
 ################################################################################
+# 7zip
+sudo apt-get install p7zip-full
