@@ -81,7 +81,7 @@ sudo apt-get install python3-pip
 
 ##################################################
 # python stuff
-sudo apt-get install python3-cffi python3-dev python3-pypandoc python3-setuptools
+sudo apt-get install python3-cffi python3-dev python3-pypandoc python3-setuptools python3-venv
 ##################################################
 
 # for jukit
