@@ -22,6 +22,7 @@
   "plenary": { "branch": "master", "commit": "b5c8de02a44ffeabff678090edd6a132ff8ab77d" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
   "telescope.nvim": { "branch": "master", "commit": "0c12735d5aff6a48ffd8111bf144dc2ff44e5975" },
+  "tiny-glimmer.nvim": { "branch": "main", "commit": "0d4453364dafac6bd8efee5268727d25c208e804" },
   "trouble.nvim": { "branch": "main", "commit": "551105a339159841fe8d490330a65268ce931fe8" },
   "undotree": { "branch": "master", "commit": "56c684a805fe948936cda0d1b19505b84ad7e065" },
   "vim-fugitive": { "branch": "master", "commit": "09ffa8fc08c27b47790f954396adacfe6c450130" },
