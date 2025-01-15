@@ -78,9 +78,6 @@ sudo apt-get install -y nodejs
 # pip because it is not installed for some reason
 sudo apt-get update
 sudo apt-get install python3-pip
-
-##################################################
-# python stuff
 sudo apt-get install python3-cffi python3-dev python3-pypandoc python3-setuptools python3-venv
 ##################################################
 
@@ -124,3 +121,9 @@ curl -sSL https://install.python-poetry.org | python3 -
 ################################################################################
 # 7zip
 sudo apt-get install p7zip-full
+################################################################################
+# R (hope i wont have to install it at some point)
+sudo apt-get update
+sudo apt-get install r-base
+sudo apt-get install r-base-dev
+
