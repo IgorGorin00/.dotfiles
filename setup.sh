@@ -126,4 +126,6 @@ sudo apt-get install p7zip-full
 sudo apt-get update
 sudo apt-get install r-base
 sudo apt-get install r-base-dev
-
+sudo apt-get install libxml2-dev libssl-dev libcurl4-openssl-dev libfreetype-dev libfontconfig1-dev libharfbuzz-dev
+sudo apt-get install libfribidi-dev libharfbuzz-dev libpng-dev
+sudo apt-get install libtiff5-dev libjpeg-dev libpng-dev
