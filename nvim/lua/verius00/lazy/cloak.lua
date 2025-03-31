@@ -12,6 +12,7 @@ return {
                     -- This can be a table to match multiple file patterns.
                     file_pattern = {
                         ".env*",
+                        ".Renviron",
                         "wrangler.toml",
                         ".dev.vars",
                         "secret.py",
