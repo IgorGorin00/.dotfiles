@@ -46,4 +46,9 @@ vim.api.nvim_set_keymap('n', '<C-]>', ':vertical resize +2<CR>', { noremap = tru
 vim.api.nvim_set_keymap('n', '<C-;>', ':horizontal resize -2<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-\'>', ':horizontal resize +2<CR>', { noremap = true, silent = true })
 ]]--
+-- this is the remap to make enter act normal
 vim.keymap.set('n', '<leader>h<CR>', ':call jukit#send#line()<cr>', { noremap = true, silent = true })
+-- Add a keymap (e.g., <leader>p) to format the current buffer
+--
+-- i will use this if format on save annoys me
+-- vim.keymap.set("n", "<leader>p", ":%!autopep8 -<CR>", { buffer = true, desc = "Format Python with autopep8" })
