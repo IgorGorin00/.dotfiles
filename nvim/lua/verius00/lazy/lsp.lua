@@ -79,12 +79,27 @@ return {
                 ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
             }),
             sources = cmp.config.sources({
-                { name = 'nvim_lsp' },
-                { name = 'luasnip' }, -- For luasnip users.
-            }, {
-              { name = 'buffer' },
-            })
-          })
-
+            { name = 'nvim_lsp' },
+            { name = 'luasnip' }, -- For luasnip users.
+        }, {
+            { name = 'buffer' },
+        })
+    })
+    -- this kinda should disable virtual_text in R files 
+    -- but it does not work 
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = "R",
+        callback = function()
+            vim.diagnostic.config({ virtual_text = false })
+        end,
+    })
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = "*",
+        callback = function()
+            if vim.bo.filetype ~= "r" then
+                vim.diagnostic.config({ virtual_text = true }) -- Re-enable for all other file types
+            end
+        end,
+    })
     end
 }
